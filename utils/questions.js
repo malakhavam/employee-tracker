@@ -115,5 +115,41 @@ module.exports = {
 		},
 	],
 
-		
+		// Option to update role
+	updateRole: (employees, job) => [
+		// Select Employee to Update
+		{
+			name: "update",
+			type: "list",
+			message: "Choose the employee whose role is to be updated:",
+			choices: employees,
+		},
+		// Select Employee's New Role
+		{
+			name: "role",
+			type: "list",
+			message: "Choose employee's job position",
+			choices: job,
+		},
+	],
+
+	// Option to update employeer's manager
+	updateManager: (employees) => [
+		// Select Employee to Update
+		{
+			name: "update",
+			type: "list",
+			message: "Choose the employee whose manager is to be updated:",
+			choices: employees,
+		},
+		// Select Employee's New Manager
+		{
+			name: "manager",
+			type: "list",
+			message: "Choose employee's new manager",
+			choices: employees,
+		},
+	],
+
+	
 };
