@@ -26,6 +26,26 @@ module.exports = {
 			"Exit",
 		],
 	},
+    viewManagerOption: (managerChoices) => [
+		// Select Manager
+		{
+			type: "list",
+			name: "managerId",
+			message: "Which manager will you choose?",
+			choices: managerChoices,
+		},
+	],
 
-	
+	// View employees by departments
+	departmentOption: (departmentChoices) => [
+		// Select Department
+		{
+			type: "list",
+			name: "departmentId",
+			message: "Which department do you wnat to see?",
+			choices: departmentChoices,
+		},
+	],
+
+		
 };
