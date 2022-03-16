@@ -151,5 +151,36 @@ module.exports = {
 		},
 	],
 
-	
+	// Option to delete employee
+	deleteEmployeeOption: (deleteEmployeeChoices) => [
+		// Select Employee to delete
+		{
+			type: "list",
+			name: "employeeId",
+			message: "Which employee do you want to delete?",
+			choices: deleteEmployeeChoices,
+		},
+	],
+
+	// Option to delete department
+	deleteDepartmentOption: (deleteDepartmentChoices) => [
+		// Select Department to delete
+		{
+			type: "list",
+			name: "departmentId",
+			message: "Which department do you want to delete?",
+			choices: deleteDepartmentChoices,
+		},
+	],
+
+	// Option to delete role
+	deleteRoleOption: (deleteRoleChoices) => [
+		// Select Role to Remove
+		{
+			type: "list",
+			name: "roleId",
+			message: "Which role do you want to remove?",
+			choices: deleteRoleChoices,
+		},
+	],	
 };
