@@ -10,9 +10,13 @@ const db = mysql.createConnection(
       user: 'root',
       // Your MySQL password
       password: 'Yfnfkb1963!',
-      database: 'election'
+      database: 'employeetracker'
     },
     console.log('Connected to the employeetracker database.')
   );
+
+  db.connect(function (err) {
+    if (err) throw err;
+  });
 
   module.exports = db;
