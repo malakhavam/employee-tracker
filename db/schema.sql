@@ -1,10 +1,14 @@
-CREATE TABLE Departments (
+DROP TABLE IF EXISTS departments
+DROP TABLE IF EXISTS roles
+DROP TABLE IF EXISTS employees
+
+CREATE TABLE departments (
   department_id INT NOT NULL AUTO_INCREMENT,
   department_name VARCHAR(30) NULL,
   PRIMARY KEY (department_id)
 );
 
-CREATE TABLE Roles (
+CREATE TABLE roles (
   role_id INT NOT NULL AUTO_INCREMENT,
   title VARCHAR(30) NULL,
   salary DECIMAL(9, 2) NULL,
@@ -13,7 +17,7 @@ CREATE TABLE Roles (
   FOREIGN KEY (department_id) REFERENCES Departments (department_id)
 );
 
-CREATE TABLE Employees (
+CREATE TABLE employees (
   id INT NOT NULL AUTO_INCREMENT,
   first_name VARCHAR(30) NULL,
   last_name VARCHAR(30) NULL,

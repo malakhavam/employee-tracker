@@ -201,7 +201,7 @@ function viewRoles() {
 				`ID: ${role.id} | Title: ${role.title}\n Salary: ${role.salary}\n`,
 			);
 		});
-		console.log("\n<<<<<<<<<<<<<<<<<<<< ⛔ >>>>>>>>>>>>>>>>>>>>\n");
+		
 		firstPrompt();
 	});
 }
@@ -380,7 +380,7 @@ const updateEmployeeRole = () => {
 							console.log(
 								"\n" + "\n" + res.affectedRows + " Updated successfully!",
 							);
-							console.log("\n<<<<<<<<<<<<<<<<<<<< ⛔ >>>>>>>>>>>>>>>>>>>>\n");
+							
 							firstPrompt();
 						},
 					);
