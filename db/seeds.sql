@@ -1,5 +1,5 @@
 /* Departments*/
-INSERT INTO departments (name)
+INSERT INTO departments (department_name)
 VALUES
   ('Electricians'),
   ('Human Resources'),
