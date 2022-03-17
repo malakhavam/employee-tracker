@@ -1,60 +1,43 @@
 /* Departments*/
 INSERT INTO departments (name)
-VALUES ("Electricians");
-INSERT INTO departments (name)
-VALUES ("Human Resources");
-INSERT INTO departments (name)
-VALUES ("Finance");
-INSERT INTO departments (name)
-VALUES ("Executive office");
+VALUES
+  ('Electricians'),
+  ('Human Resources'),
+  ('Finance'),
+  ('Executive office');
 
 /* Roles */
+
 /* Electricians */
 INSERT INTO roles (title, salary, department_id)
-VALUES ("Electrician team lead", 100000, 1);
-INSERT INTO roles (title, salary, department_id)
-VALUES ("Electrician", 80000, 1);
-
+VALUES 
+  ('Electrician team lead', 100000, 1),
+  ('Electrician', 80000, 1),
 /* HR */
-INSERT INTO roles (title, salary, department_id)
-VALUES ("HR Manager", 150000, 2);
-INSERT INTO roles (title, salary, department_id)
-VALUES ("HR Coordinator", 120000, 2);
-
+  ('HR Manager', 150000, 2),
+  ('HR Coordinator', 120000, 2),
 /* Accounting Department */
-INSERT INTO roles (title, salary, department_id)
-VALUES ("Lead Accountant", 150000, 3);
-INSERT INTO roles (title, salary, department_id)
-VALUES ("Accountant", 125000, 3);
-
+  ('Lead Accountant', 150000, 3),
+  ("Accountant", 125000, 3),
 /* Executive office */
-INSERT INTO roles (title, salary, department_id)
-VALUES ("Executive office", 250000, 4);
-
-
+  ('Executive office', 250000, 4);
 
 /* Employees */
 INSERT INTO employees (first_name, last_name, role_id, manager_id)
+VALUES 
 /* John Doe, Electrician, Electricians Department */
-VALUES ("John", "Doe", 1, null); 
-INSERT INTO employees (first_name, last_name, role_id, manager_id)
+      ('John', 'Doe', 1, null), 
 /* Petrs Melnikovs, Electrician team lead, Electricians Department  */
-VALUES ("Petrs", "Melnikovs", 1, 1);
-INSERT INTO employees (first_name, last_name, role_id, manager_id)
+      ('Petrs', 'Melnikovs', 1, 1),
 /* Oleksii Nikitenko, Electrician, Electricians Department */
-VALUES ("Oleksii", "Nikitenko", 2, 2);
-INSERT INTO employees (first_name, last_name, role_id, manager_id)
+      ('Oleksii', 'ikitenko', 2, 2),
 /* Maryia Malakhava, HR Manager, HR */
-VALUES ("Maryia", "Malakhava", 3, null);
-INSERT INTO employees (first_name, last_name, role_id, manager_id)
+      ('Maryia', 'Malakhava', 3, null),
 /* Natallia Titova, HR Coordinator, HR */
-VALUES ("Natallia", "Titova", 4, 4);
-INSERT INTO employees (first_name, last_name, role_id, manager_id)
+      ('Natallia', 'Titova', 4, 4),
 /* Kamal Makhamov, Lead Accountant, Accounting Department */
-VALUES ("Kamal", "Makhamov", 5, null);
-INSERT INTO employees (first_name, last_name, role_id, manager_id)
+      ('Kamal', 'Makhamov', 5, null),
 /* Marina Pron, Accountant, Accounting Department */
-VALUES ("Marina", "Pron", 6, 6);
-INSERT INTO employees (first_name, last_name, role_id, manager_id)
+      ('Marina', 'Pron', 6, 6),
 /* Konstantin Archakov, Executive officer, Executive office */
-VALUES ("Konstantin", "Archakov", 7, null);
+      ('Konstantin', 'Archakov', 7, null);
