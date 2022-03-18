@@ -30,7 +30,7 @@ VALUES
 /* Petrs Melnikovs, Electrician team lead, Electricians Department  */
       ('Petrs', 'Melnikovs', 1, 1),
 /* Oleksii Nikitenko, Electrician, Electricians Department */
-      ('Oleksii', 'ikitenko', 2, 2),
+      ('Oleksii', 'Nikitenko', 2, 2),
 /* Maryia Malakhava, HR Manager, HR */
       ('Maryia', 'Malakhava', 3, null),
 /* Natallia Titova, HR Coordinator, HR */

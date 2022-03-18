@@ -89,7 +89,7 @@ function viewEmployee() {
 
 // View employee by department
 function viewEmployeeByManager() {
-	console.log("Manager Rota:\n");
+	console.log("Manager employees:\n");
 
 	var query = `SELECT e.manager_id, CONCAT(m.first_name, ' ', m.last_name) AS manager FROM employee e LEFT JOIN role r
 	ON e.role_id = r.id
