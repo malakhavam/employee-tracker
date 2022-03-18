@@ -9,9 +9,9 @@ const { option } = require("./utils/questions");
 require("console.table");
 
 // launch app
-firstOption();
+firstPrompt();
 
-function firstOption() {
+function firstPrompt() {
 	// Main Menu
 	inquirer.prompt(prompt.firstPrompt).then(function ({ task }) {
 		switch (task) {
@@ -279,9 +279,7 @@ const addEmployee = () => {
 								(err, res) => {
 									if (err) throw err;
 									console.log("\n" + res.affectedRows + " employee created");
-									console.log(
-										"\n<<<<<<<<<<<<<<<<<<<< ⛔ >>>>>>>>>>>>>>>>>>>>\n",
-									);
+									
 									viewEmployee();
 								},
 							);

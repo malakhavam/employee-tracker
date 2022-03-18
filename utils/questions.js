@@ -1,5 +1,5 @@
 module.exports = {
-		firstOption: {
+		firstPrompt: {
 		type: "list",
 		name: "task",
 		message: "Make a selection:",
@@ -26,7 +26,7 @@ module.exports = {
 			"Exit",
 		],
 	},
-    viewManagerOption: (managerChoices) => [
+    viewManagerPrompt: (managerChoices) => [
 		// Select Manager
 		{
 			type: "list",
@@ -37,7 +37,7 @@ module.exports = {
 	],
 
 	// View employees by departments
-	departmentOption: (departmentChoices) => [
+	departmentPrompt: (departmentChoices) => [
 		// Select Department
 		{
 			type: "list",
@@ -152,7 +152,7 @@ module.exports = {
 	],
 
 	// Option to delete employee
-	deleteEmployeeOption: (deleteEmployeeChoices) => [
+	deleteEmployeePrompt: (deleteEmployeeChoices) => [
 		// Select Employee to delete
 		{
 			type: "list",
@@ -163,7 +163,7 @@ module.exports = {
 	],
 
 	// Option to delete department
-	deleteDepartmentOption: (deleteDepartmentChoices) => [
+	deleteDepartmentPrompt: (deleteDepartmentChoices) => [
 		// Select Department to delete
 		{
 			type: "list",
@@ -174,7 +174,7 @@ module.exports = {
 	],
 
 	// Option to delete role
-	deleteRoleOption: (deleteRoleChoices) => [
+	deleteRolePrompt: (deleteRoleChoices) => [
 		// Select Role to Remove
 		{
 			type: "list",
