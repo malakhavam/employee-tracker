@@ -35,12 +35,12 @@
   
    ## Video
 
-   Link to video:
+   Link to video: https://youtu.be/NI-Oq_vGofo
    
    ## Questions
    
    If you have questions or want to share comments, I will be glad to hear from you. Please contact me at malakhava@yahoo.com
 
-   https://github.com/malakhavam/note-taker
+   https://github.com/malakhavam/employee-tracker
    
    malakhava@yahoo.com

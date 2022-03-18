@@ -5,8 +5,6 @@ const table = require("console.table");
 const db = require("./db/connection");
 // Prompts
 const prompt = require("./utils/questions");
-const { option } = require("./utils/questions");
-require("console.table");
 
 // launch app
 firstPrompt();
@@ -59,6 +57,7 @@ function firstPrompt() {
 				break; 
 			case "Exit":
 				db.end();
+                console.log("Bye")
 				break; 
 		}
 	});
@@ -169,7 +168,7 @@ function viewEmployeeByDepartment() {
 				db.query(query, answer.departmentId, function (err, res) {
 					if (err) throw err;
 
-					console.table("\nDepartment Rota: ", res);
+					console.table("\nAvailable departments: ", res);
 					
 					firstPrompt();
 				});
